@@ -17,7 +17,7 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution_role_policy_attach
 # Container Definition
 module "container_definition" {
   source  = "cloudposse/ecs-container-definition/aws"
-  version = "0.23.0"
+  version = "0.41.0"
 
   container_name               = var.container_name
   container_image              = var.container_image
